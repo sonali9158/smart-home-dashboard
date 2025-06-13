@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Home Control Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🏠 Smart Home Control Dashboard</h1>
+
+  <div class="device-container">
+    <div class="device-card" id="light">
+      <h2>💡 Light <span>(L)</span></h2>
+      <button onclick="toggleDevice(this, 'light')">OFF</button>
+      <p class="status">Status: Light is OFF</p>
+    </div>
+
+    <div class="device-card" id="ac">
+      <h2>❄️ AC <span>(A)</span></h2>
+      <button onclick="toggleDevice(this, 'ac')">OFF</button>
+      <p class="status">Status: AC is OFF</p>
+    </div>
+
+    <div class="device-card" id="door">
+      <h2>🔐 Door Lock <span>(D)</span></h2>
+      <input type="password" id="doorPass" placeholder="Enter Passkey">
+      <button onclick="toggleDoor(this)">LOCK</button>
+      <p class="status">Status: Door is LOCKED</p>
+    </div>
+
+    <div class="device-card" id="tv">
+      <h2>📺 TV <span>(T)</span></h2>
+      <button onclick="toggleDevice(this, 'tv')">OFF</button>
+      <p class="status">Status: TV is OFF</p>
+    </div>
+
+    <div class="device-card" id="envData">
+      <h2>🌡️ Environment</h2>
+      <p>Temperature: <span id="temp">--</span>°C</p>
+      <p>Humidity: <span id="humidity">--</span>%</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top: 30px;">⚙️ Settings</h2>
+  <div class="settings">
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    <button onclick="resetAll()">🔁 Reset Devices</button>
+    <button onclick="startListening()">🎤 Start Voice Control</button>
+  </div>
+
+  <h2 style="margin-top: 40px;">⚡ Electricity Usage (kWh)</h2>
+  <canvas id="usageChart" width="400" height="200"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

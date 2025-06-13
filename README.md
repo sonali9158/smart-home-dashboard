@@ -23,19 +23,9 @@ A responsive and interactive dashboard for controlling smart home devices.
 - `style.css` — Styling, layout, animations, dark mode
 - `script.js` — Logic for devices, voice control, charts, notifications
 
----
+---file:///C:/Users/HP/OneDrive/Documents/Desktop/smart-home-dashboard/index.html
 
-## 📸 Preview
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Smart+Home+Dashboard)
-
----
-
-## 🚀 Live Demo (optional)
-
-If you deploy the site on GitHub Pages, add the link here.
-
----
 
 ## 🙋‍♀️ Made By
 
